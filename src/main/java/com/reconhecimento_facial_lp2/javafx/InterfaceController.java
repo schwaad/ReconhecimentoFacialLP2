@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import com.reconhecimento_facial_lp2.springboot.service.AdminService;
 
 import java.io.IOException;
 
@@ -22,6 +23,7 @@ public class InterfaceController {
     public Button userLoginButton;
     public Label errorLabel;
     public TextField passwordField;
+    private final AdminService adminService = new AdminService();
 
     @FXML
     protected void onExitButtonClick() {
@@ -63,9 +65,8 @@ public class InterfaceController {
     }
     @FXML
     protected void autenticateAdmin(ActionEvent event) throws IOException {
-        String adminSenha = "123";
         String senha = passwordField.getText();
-        if(senha.equals(adminSenha)){
+        if(AdminService.isPasswordValid(senha)){
             switchToAdminArea(event);
         }
         else{
