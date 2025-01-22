@@ -1,0 +1,5 @@
+com/example/lp2reconhecimentofacial/InterfaceController.class
+model/User.class
+model/Admin.class
+com/reconhecimento_facial_lp2/javafx/MainApplication.class
+com/reconhecimento_facial_lp2/springboot/ReconhecimentoFacialLp2Application.class
