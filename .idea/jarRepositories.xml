@@ -17,6 +17,11 @@
       <option name="url" value="https://repo1.maven.org/maven2/org/openjfx" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="wpifirst" />
+      <option name="name" value="wpifirst" />
+      <option name="url" value="https://first.wpi.edu/FRC/roborio/maven/release/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />

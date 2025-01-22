@@ -1,4 +1,4 @@
-package com.example.lp2reconhecimentofacial;
+package com.reconhecimento_facial_lp2.javafx;
 
 import com.reconhecimento_facial_lp2.javafx.MainApplication;
 import javafx.event.ActionEvent;
