@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ReconhecimentoFacialLP2" />
+        <module name="reconhecimento-facial-lp2" />
       </profile>
     </annotationProcessing>
   </component>
