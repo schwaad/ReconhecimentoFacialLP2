@@ -19,10 +19,7 @@ public class AdminService {
 
     public static boolean isPasswordValid(String senha) {
         String query = "SELECT 1 FROM admin WHERE senha = ?";
-        String DB_URL = System.getenv("DB_URL");
-        String DB_USER = System.getenv("DB_USER");
-        String DB_PASSWORD = System.getenv("PSQL_PASS");
-        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+        try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/reconhecimento-facial-lp2", "postgres", "teste123");
              PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 
             preparedStatement.setString(1, senha);

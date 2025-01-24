@@ -5,14 +5,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="124.0" prefWidth="223.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lp2reconhecimentofacial.InterfaceController">
+<VBox alignment="CENTER" prefHeight="124.0" prefWidth="223.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.reconhecimento_facial_lp2.javafx.InterfaceController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <children>
-      <Label text="Area do Usuario" />
-      <Button mnemonicParsing="false" text="Realizar leitura biométrica" />
-       <Button fx:id="exitButton" onAction="#goBackToMain" cancelButton="true" mnemonicParsing="false" text="Voltar" />
-   </children>
-    
+    <children>
+        <Label text="Area do Usuario" />
+        <Button mnemonicParsing="false" onAction="#FaceRecognition" text="Realizar leitura biométrica" />
+        <Button fx:id="exitButton" onAction="#goBackToMain" cancelButton="true" mnemonicParsing="false" text="Voltar" />
+    </children>
+
 </VBox>
